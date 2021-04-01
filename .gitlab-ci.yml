@@ -59,7 +59,11 @@ docker-build:
     - docker push $TAG_LATEST
 
 feature-job:
-  script: echo "npm test"
+  script:
+    - echo "Testing App"
+    - CI=true npm test -- -u
+    -  npm run build
+    - echo "Test successfully!"
   rules:
     - if: '$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME =~ /^feature/ && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"'
       when: always
