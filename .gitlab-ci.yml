@@ -13,6 +13,8 @@ variables:
 build:
   stage: build
   image: node
+  tag:
+    - gitlab-react
   
   script:
     - echo "Start building App"
@@ -29,6 +31,8 @@ build:
 test_master_branch:
   stage: test
   image: node
+  tag:
+    - gitlab-react
   
   script:
     - echo "Testing App"
@@ -38,6 +42,8 @@ test_master_branch:
 test_feature_branch:
   stage: test
   image: node
+  tag:
+    - gitlab-react
   only:
     - /^feature-.*$/
   script:
@@ -48,6 +54,8 @@ test_feature_branch:
 docker-build:
   stage: docker-build
   image: docker:latest
+  tag:
+    - gitlab-react
   services:
     - docker:19.03.12-dind
   before_script:
@@ -59,6 +67,8 @@ docker-build:
     - docker push $TAG_LATEST
 
 feature-job:
+  tag:
+    - gitlab-react
   script:
     - echo "Testing App"
     - CI=true npm test -- -u
@@ -74,6 +84,8 @@ feature-job:
 
 deploy-firebase:
   stage: deploy
+  tag:
+    - gitlab-react
   image: node:latest
   before_script:
     - echo "deploying app to firebase"
