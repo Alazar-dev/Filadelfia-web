@@ -7,6 +7,7 @@ import Logo from "../assets/Footer/Logo.png";
 const useStyles = makeStyles({
   text: {
     textAlign: "center",
+    fontSize: "10px"
   },
   link: {
     textDecoration: "none",
@@ -113,7 +114,7 @@ const Footer = () => {
         </Grid>
       </Box>
       <Box className={classes.root} bgcolor="primary.dark">
-        <Typography className={classes.text} color="primary">
+        <Typography className={classes.text} color="secondary">
           © COPYRIGHTS 2021 PHILLIPISIYOS CHURCH
         </Typography>
       </Box>
