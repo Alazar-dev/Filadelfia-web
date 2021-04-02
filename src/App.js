@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/core/styles";
-import theme from './themes/Theme'
+import theme from "./themes/Theme";
 
 import Header from "./layouts/header/AppBar";
 import Home from "./pages/Home";
-import Footer from "./components/Footer";
+import Footer from "./layouts/footer/Footer";
 
 class App extends Component {
   render() {
