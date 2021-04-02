@@ -1,7 +1,12 @@
 import React from "react";
+import CoverImage from "../components/homepage/CoverImage";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <>
+      <CoverImage />
+    </>
+  );
 }
 
 export default Home;
