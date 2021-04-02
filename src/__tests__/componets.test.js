@@ -1,11 +1,9 @@
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom";
 import renderer from "react-test-renderer";
 
-import App from '../App.js';
+import App from "../App.js";
 
-
-
-  it('renders a snapshot', () => {
-    const tree = renderer.create(<App/>).toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+it("renders a snapshot", () => {
+  const tree = renderer.create(<App />).toJSON();
+  expect(tree).toMatchSnapshot();
+});

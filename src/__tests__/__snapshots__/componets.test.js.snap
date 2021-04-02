@@ -1,11 +1,324 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders a snapshot 1`] = `
-<div
-  className="App"
->
-  <h1>
-    Hello World!
-  </h1>
+<div>
+  <header
+    className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorDefault makeStyles-header-1 MuiPaper-elevation4"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-13 makeStyles-root-7"
+    >
+      <div
+        className="MuiGrid-root makeStyles-grid-12 MuiGrid-container MuiGrid-spacing-xs-6 MuiGrid-justify-xs-center"
+      >
+        <hr
+          className="MuiDivider-root MuiDivider-flexItem MuiDivider-vertical"
+        />
+        <div
+          className="MuiGrid-root makeStyles-item-10 MuiGrid-item"
+        >
+          <h6
+            className="MuiTypography-root makeStyles-text-11 MuiTypography-subtitle2"
+          >
+            <img
+              alt=""
+              src="Icon Phone.png"
+            />
+             +251 011 657 4000
+          </h6>
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-flexItem MuiDivider-vertical"
+        />
+        <div
+          className="MuiGrid-root makeStyles-item-10 MuiGrid-item"
+        >
+          <h6
+            className="MuiTypography-root makeStyles-text-11 MuiTypography-subtitle2"
+          >
+            +251 011 657 4001
+          </h6>
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-flexItem MuiDivider-vertical"
+        />
+        <div
+          className="MuiGrid-root makeStyles-item-10 MuiGrid-item"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-item"
+            >
+              <img
+                alt=""
+                src="Icon Web.png"
+              />
+            </div>
+            <div
+              className="MuiGrid-root MuiGrid-item"
+            >
+              <h6
+                className="MuiTypography-root makeStyles-text-11 MuiTypography-subtitle2"
+              >
+                info@Phillipisiyoscurch.com
+              </h6>
+            </div>
+          </div>
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-flexItem MuiDivider-vertical"
+        />
+        <div
+          className="MuiGrid-root makeStyles-item-10 MuiGrid-item"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-align-items-xs-center"
+          >
+            <div
+              className="MuiGrid-root MuiGrid-item"
+            >
+              <img
+                alt=""
+                src="Icon Location.png"
+              />
+            </div>
+            <div
+              className="MuiGrid-root MuiGrid-item"
+            >
+              <h6
+                className="MuiTypography-root makeStyles-text-11 MuiTypography-subtitle2"
+              >
+                Bole Michael, infront of Miachel Church
+              </h6>
+            </div>
+          </div>
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-flexItem MuiDivider-vertical"
+        />
+         
+        <div
+          className="MuiGrid-root makeStyles-item-10 MuiGrid-item"
+        >
+          <ul
+            className="MuiList-root makeStyles-socialLinks-8 MuiList-padding"
+          >
+            <a
+              href="https://www.twitter.com"
+            >
+              <img
+                alt="twitter"
+                className="makeStyles-link-9"
+                src="Twitter.png"
+              />
+            </a>
+            <a
+              href="https://www.googleplus.com"
+            >
+              <img
+                alt="google plus"
+                className="makeStyles-link-9"
+                src="Google Plus.png"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com"
+            >
+              <img
+                alt="facebook"
+                className="makeStyles-link-9"
+                src="Facebook.png"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+            >
+              <img
+                alt="linkedin"
+                className="makeStyles-link-9"
+                src="Linked IN.png"
+              />
+            </a>
+          </ul>
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-flexItem MuiDivider-vertical"
+        />
+      </div>
+    </div>
+    <div
+      className="makeStyles-navbar-5"
+    >
+      <div
+        className="MuiToolbar-root MuiToolbar-regular makeStyles-toolbar-3 MuiToolbar-gutters"
+      >
+        <div
+          className="makeStyles-logo-6"
+        >
+          <img
+            alt=""
+            src="Logo.png"
+          />
+        </div>
+        <div>
+          <a
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-menuButton-2 MuiButton-colorInherit"
+            href="/"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Home
+            </span>
+          </a>
+          <a
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-menuButton-2 MuiButton-colorInherit"
+            href="/sermons"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Sermons
+            </span>
+          </a>
+          <a
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-menuButton-2 MuiButton-colorInherit"
+            href="/prayerwall"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Prayer Wall
+            </span>
+          </a>
+          <a
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-menuButton-2 MuiButton-colorInherit"
+            href="/events"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Events
+            </span>
+          </a>
+          <a
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-menuButton-2 MuiButton-colorInherit"
+            href="/gallery"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Gallery
+            </span>
+          </a>
+          <a
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-menuButton-2 MuiButton-colorInherit"
+            href="/contact"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role="button"
+            tabIndex={0}
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Contact
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div>
+    Home
+  </div>
 </div>
 `;
