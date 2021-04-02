@@ -48,7 +48,7 @@ test_feature_branch:
     - /^feature-.*$/
   script:
     - echo "Testing App"
-    - CI=true npm test
+    - CI=true npm test -- -u
     - echo "Test successfully!"
 
 docker-build:
