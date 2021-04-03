@@ -10,6 +10,7 @@ import photo6 from "../../assets/Sermons/Check out/Photo 06.png";
 
 const useStyles = makeStyles({
   imgs: {
+    marginTop: 5,
     "&:hover": {
       opacity: 0.8,
       cursor: "pointer",
@@ -21,18 +22,16 @@ const useStyles = makeStyles({
 const GalleryCheckout = () => {
   const classes = useStyles();
   return (
-    <Container>
+    <Grid container>
       <Box bgcolor="primary.dark">
         <Typography color="secondary">CHECKOUT OUT GALLERY</Typography>
       </Box>
-      <Grid container justify="center">
-        {[photo1, photo2, photo3, photo4, photo5, photo6].map((imgs) => (
-          <Grid key={imgs} item xs={4}>
-            <img className={classes.imgs} src={imgs} alt="" />
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+      {[photo1, photo2, photo3, photo4, photo5, photo6].map((imgs) => (
+        <Grid key={imgs} item xs={4}>
+          <img className={classes.imgs} src={imgs} alt="" />
+        </Grid>
+      ))}
+    </Grid>
   );
 };
 
