@@ -34,105 +34,96 @@ const SermonsPage = () => {
   const classes = useStyles();
   return (
     <>
-      <Box bgcolor="secondary.dark" color="primary.light">
+      {/* <Box bgcolor="secondary.dark" color="primary.light">
         <Typography align="center" variant="h5">
           LISTEN TO SERMONS
         </Typography>
-      </Box>
-      <Grid justify="center" container spacing={4}>
-        <Grid container sm={6} md={9} lg={6} spacing={2}>
+      </Box> */}
+      <Grid justify="center" container>
+        <Grid item sm={6} md={9} lg={6}>
           <img className={classes.headerImg} src={headerImg} alt="" />
-          <Grid item>
-            <Box display="flex">
-              <img src={ImgSupermacy} alt="" />
-              <div>
-                <CardContent>
-                  <Typography variant="body2">
-                    THE AWESOME TEACH OF COMPASSION OF GOD IN JONAH GOD'S
-                    GREATEST GIFT
-                  </Typography>
-                  <Typography variant="subtitle2" color="textSecondary">
-                    <Typography variant="caption" color="primary">
-                      Category:
-                    </Typography>{" "}
-                    Global Outreach{" "}
-                    <Typography variant="caption" color="primary">
-                      Speaker:
-                    </Typography>{" "}
-                    Pastor Abebe Kebede
-                  </Typography>
-                </CardContent>
-              </div>
-            </Box>
-          </Grid>
-          <Grid item>
-            <Box display="flex">
-              <img src={ImgTeach} alt="" />
-              <div>
-                <CardContent>
-                  <Typography variant="body2">
-                    SEX AND THE SUPERMACY OF CHRIST PART TWO
-                  </Typography>
-                  <Typography variant="subtitle2" color="textSecondary">
-                    <Typography variant="caption" color="primary">
-                      Category:
-                    </Typography>{" "}
-                    Global Outreach{" "}
-                    <Typography variant="caption" color="primary">
-                      Speaker:
-                    </Typography>{" "}
-                    Pastor Abebe Kebede
-                  </Typography>
-                </CardContent>
-              </div>
-            </Box>
-          </Grid>
-          <Grid item>
-            <Box display="flex">
-              <img src={ImgGospel} alt="" />
-              <div>
-                <CardContent>
-                  <Typography variant="body2">
-                    THE GOSPEL SOUL AND LIFE IN THE SERMON ON THE MOUNT FLOWER
-                    MOUND
-                  </Typography>
-                  <Typography variant="subtitle2" color="textSecondary">
-                    <Typography variant="caption" color="primary">
-                      Category:
-                    </Typography>{" "}
-                    Global Outreach{" "}
-                    <Typography variant="caption" color="primary">
-                      Speaker:
-                    </Typography>{" "}
-                    Pastor Abebe Kebede
-                  </Typography>
-                </CardContent>
-              </div>
-            </Box>
-          </Grid>
-          <Grid item>
-            <Box display="flex">
-              <img src={ImgChurch} alt="" />
-              <div>
-                <CardContent>
-                  <Typography variant="subtitle2">
-                    THE GOSPEL SOUL & LIFE IN THE SERMON ON THE MOUNT FLOWER
-                    MOUND
-                  </Typography>
-                  <Typography variant="subtitle2" color="textSecondary">
-                    <Typography variant="caption" color="primary">
-                      Category:
-                    </Typography>{" "}
-                    Global Outreach{" "}
-                    <Typography variant="caption" color="primary">
-                      Speaker:
-                    </Typography>{" "}
-                    Pastor Abebe Kebede
-                  </Typography>
-                </CardContent>
-              </div>
-            </Box>
-          </Grid>
+          <Box display="flex">
+            <img src={ImgSupermacy} alt="" />
+            <div>
+              <CardContent>
+                <Typography variant="body2">
+                  THE AWESOME TEACH OF COMPASSION OF GOD IN JONAH GOD'S GREATEST
+                  GIFT
+                </Typography>
+                <Typography variant="subtitle2" color="textSecondary">
+                  <Typography variant="caption" color="primary">
+                    Category:
+                  </Typography>{" "}
+                  Global Outreach{" "}
+                  <Typography variant="caption" color="primary">
+                    Speaker:
+                  </Typography>{" "}
+                  Pastor Abebe Kebede
+                </Typography>
+              </CardContent>
+            </div>
+          </Box>
+          <Box display="flex">
+            <img src={ImgTeach} alt="" />
+            <div>
+              <CardContent>
+                <Typography variant="body2">
+                  SEX AND THE SUPERMACY OF CHRIST PART TWO
+                </Typography>
+                <Typography variant="subtitle2" color="textSecondary">
+                  <Typography variant="caption" color="primary">
+                    Category:
+                  </Typography>{" "}
+                  Global Outreach{" "}
+                  <Typography variant="caption" color="primary">
+                    Speaker:
+                  </Typography>{" "}
+                  Pastor Abebe Kebede
+                </Typography>
+              </CardContent>
+            </div>
+          </Box>
+          <Box display="flex">
+            <img src={ImgGospel} alt="" />
+            <div>
+              <CardContent>
+                <Typography variant="body2">
+                  THE GOSPEL SOUL AND LIFE IN THE SERMON ON THE MOUNT FLOWER
+                  MOUND
+                </Typography>
+                <Typography variant="subtitle2" color="textSecondary">
+                  <Typography variant="caption" color="primary">
+                    Category:
+                  </Typography>{" "}
+                  Global Outreach{" "}
+                  <Typography variant="caption" color="primary">
+                    Speaker:
+                  </Typography>{" "}
+                  Pastor Abebe Kebede
+                </Typography>
+              </CardContent>
+            </div>
+          </Box>
+          <Box display="flex">
+            <img src={ImgChurch} alt="" />
+            <div>
+              <CardContent>
+                <Typography variant="subtitle2">
+                  THE GOSPEL SOUL & LIFE IN THE SERMON ON THE MOUNT FLOWER MOUND
+                </Typography>
+                <Typography variant="subtitle2" color="textSecondary">
+                  <Typography variant="caption" color="primary">
+                    Category:
+                  </Typography>{" "}
+                  Global Outreach{" "}
+                  <Typography variant="caption" color="primary">
+                    Speaker:
+                  </Typography>{" "}
+                  Pastor Abebe Kebede
+                </Typography>
+              </CardContent>
+            </div>
+          </Box>
         </Grid>
         <Grid className={classes.sideContent} item sm={12} md={3} lg={3}>
           <Container>
@@ -159,8 +150,8 @@ const SermonsPage = () => {
                 <Button>Friday service</Button>
               </ListItem>
             </List>
+            <GalleryCheckout />
           </Container>
-          <GalleryCheckout />
         </Grid>
       </Grid>
       <GalleryRow />
