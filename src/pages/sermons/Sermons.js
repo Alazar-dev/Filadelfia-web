@@ -65,12 +65,12 @@ import {
     const classes = useStyles();
     return (
       <div>
-        <Box bgcolor="primary.dark" color="info.contrastText">
-          <Typography variant="h1">LISTEN TO SERMONS</Typography>
+        <Box bgcolor="primary.dark" color="primary.light">
+          <Typography align="center" variant="h5">LISTEN TO SERMONS</Typography>
         </Box>
         <Grid justify="center" container spacing={2}>
-          <Grid className={classes.headerImg} item xs={12} md={6}>
-            <img className={classes.headerImg} src={headerImg} alt="" />
+          <Grid item xs={12} md={6}>
+            <img src={headerImg} alt="" />
             <LatestSermonsCard />
           </Grid>
           <Grid className={classes.mobileView} item xs={2}>
