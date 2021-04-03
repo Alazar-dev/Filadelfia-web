@@ -28,21 +28,24 @@ const useStyles = makeStyles((theme) => ({
   sideContent: {
     marginTop: 30,
   },
+  sermonBox: {
+      padding: "10px 0"
+  }
 }));
 
 const SermonsPage = () => {
   const classes = useStyles();
   return (
     <>
-      {/* <Box bgcolor="secondary.dark" color="primary.light">
+      <Box bgcolor="secondary.dark" color="primary.light">
         <Typography align="center" variant="h5">
           LISTEN TO SERMONS
         </Typography>
-      </Box> */}
+      </Box>
       <Grid justify="center" container>
         <Grid item sm={6} md={9} lg={6}>
           <img className={classes.headerImg} src={headerImg} alt="" />
-          <Box display="flex">
+          <Box className={classes.sermonBox} display="flex">
             <img src={ImgSupermacy} alt="" />
             <div>
               <CardContent>
@@ -63,7 +66,7 @@ const SermonsPage = () => {
               </CardContent>
             </div>
           </Box>
-          <Box display="flex">
+          <Box className={classes.sermonBox} display="flex">
             <img src={ImgTeach} alt="" />
             <div>
               <CardContent>
@@ -83,7 +86,7 @@ const SermonsPage = () => {
               </CardContent>
             </div>
           </Box>
-          <Box display="flex">
+          <Box className={classes.sermonBox} display="flex">
             <img src={ImgGospel} alt="" />
             <div>
               <CardContent>
@@ -104,7 +107,7 @@ const SermonsPage = () => {
               </CardContent>
             </div>
           </Box>
-          <Box display="flex">
+          <Box className={classes.sermonBox} display="flex">
             <img src={ImgChurch} alt="" />
             <div>
               <CardContent>
