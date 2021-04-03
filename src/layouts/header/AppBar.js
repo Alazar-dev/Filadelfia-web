@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Link as RouterLink } from "react-router-dom";
+import {Link as RouterLink } from "react-router-dom";
 import Logo from "../../assets/Header/Logo.png";
 import TopBar from "./TopBar";
 
@@ -182,12 +182,10 @@ export default function Appbar() {
 
   return (
     <AppBar position="static" color="default" className={classes.header}>
-      <BrowserRouter>
-        <TopBar />
-        <div className={classes.navbar}>
-          {mobileView ? <DisplayMobile /> : <DisplayDesktop />}
-        </div>
-      </BrowserRouter>
+      <TopBar />
+      <div className={classes.navbar}>
+        {mobileView ? <DisplayMobile /> : <DisplayDesktop />}
+      </div>
     </AppBar>
   );
 }
