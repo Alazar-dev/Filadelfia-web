@@ -2,7 +2,7 @@ import { Grid, Typography, Box, List, ListItemText } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 
-import Logo from "../assets/Footer/Logo.png";
+import Logo from "../../assets/Footer/Logo.png";
 
 const useStyles = makeStyles({
   text: {
