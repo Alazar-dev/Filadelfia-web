@@ -47,9 +47,19 @@ const SermonsPage = () => {
               <img src={ImgSupermacy} alt="" />
               <div>
                 <CardContent>
-                  <Typography variant="h6">The Supermacy of Christ</Typography>
+                  <Typography variant="body2">
+                    THE AWESOME TEACH OF COMPASSION OF GOD IN JONAH GOD'S
+                    GREATEST GIFT
+                  </Typography>
                   <Typography variant="subtitle2" color="textSecondary">
-                    Category: Global Outreach peaker: Pastor Abebe Kebede
+                    <Typography variant="caption" color="primary">
+                      Category:
+                    </Typography>{" "}
+                    Global Outreach{" "}
+                    <Typography variant="caption" color="primary">
+                      Speaker:
+                    </Typography>{" "}
+                    Pastor Abebe Kebede
                   </Typography>
                 </CardContent>
               </div>
@@ -60,12 +70,18 @@ const SermonsPage = () => {
               <img src={ImgTeach} alt="" />
               <div>
                 <CardContent>
-                  <Typography color="secondary" variant="subtitle2">
-                    THE AWESOME TEACH COMPASSION OF GOD IN JONAH GOD'S GREATEST
-                    GIFT
+                  <Typography variant="body2">
+                    SEX AND THE SUPERMACY OF CHRIST PART TWO
                   </Typography>
                   <Typography variant="subtitle2" color="textSecondary">
-                    Category: Global Outreach peaker: Pastor Abebe Kebede
+                    <Typography variant="caption" color="primary">
+                      Category:
+                    </Typography>{" "}
+                    Global Outreach{" "}
+                    <Typography variant="caption" color="primary">
+                      Speaker:
+                    </Typography>{" "}
+                    Pastor Abebe Kebede
                   </Typography>
                 </CardContent>
               </div>
@@ -76,12 +92,19 @@ const SermonsPage = () => {
               <img src={ImgGospel} alt="" />
               <div>
                 <CardContent>
-                  <Typography variant="subtitle2">
-                    THE GOSPEL SOUL & LIFE IN THE SERMON ON THE MOUNT FLOWER
+                  <Typography variant="body2">
+                    THE GOSPEL SOUL AND LIFE IN THE SERMON ON THE MOUNT FLOWER
                     MOUND
                   </Typography>
                   <Typography variant="subtitle2" color="textSecondary">
-                    Category: Global Outreach peaker: Pastor Abebe Kebede
+                    <Typography variant="caption" color="primary">
+                      Category:
+                    </Typography>{" "}
+                    Global Outreach{" "}
+                    <Typography variant="caption" color="primary">
+                      Speaker:
+                    </Typography>{" "}
+                    Pastor Abebe Kebede
                   </Typography>
                 </CardContent>
               </div>
@@ -97,7 +120,14 @@ const SermonsPage = () => {
                     MOUND
                   </Typography>
                   <Typography variant="subtitle2" color="textSecondary">
-                    Category: Global Outreach peaker: Pastor Abebe Kebede
+                    <Typography variant="caption" color="primary">
+                      Category:
+                    </Typography>{" "}
+                    Global Outreach{" "}
+                    <Typography variant="caption" color="primary">
+                      Speaker:
+                    </Typography>{" "}
+                    Pastor Abebe Kebede
                   </Typography>
                 </CardContent>
               </div>
