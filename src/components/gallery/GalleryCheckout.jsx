@@ -10,6 +10,7 @@ import photo6 from "../../assets/Sermons/Check out/Photo 06.png";
 
 const useStyles = makeStyles({
   imgs: {
+    marginTop: 10,
     "&:hover": {
       opacity: 0.8,
       cursor: "pointer",
