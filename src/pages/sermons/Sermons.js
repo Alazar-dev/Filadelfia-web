@@ -7,8 +7,10 @@ import {
   ListItem,
   Card,
   CardContent,
+  Button,
+  Container,
 } from "@material-ui/core";
-import { makeStyles} from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 import GalleryRow from "../../components/gallery/GalleryRow";
 import GalleryCheckout from "../../components/gallery/GalleryCheckout";
@@ -23,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     marginTop: 30,
   },
+  sideContent: {
+      marginTop: 30
+  }
 }));
 
 const SermonsPage = () => {
@@ -83,30 +88,32 @@ const SermonsPage = () => {
             </Card>
           </Grid>
         </Grid>
-        <Grid item sm={12} md={3} lg={3}>
-          <div>
-            <InputBase placeholder="Search…" />
-          </div>
-          <Box bgcolor="primary.dark">
-            <Typography color="primary">SERMONS</Typography>
-          </Box>
-          <List justify="right">
-            <ListItem>
-              <Typography>New</Typography>
-            </ListItem>
-            <ListItem>
-              <Typography>Popular</Typography>
-            </ListItem>
-            <ListItem>
-              <Typography>Series</Typography>
-            </ListItem>
-            <ListItem>
-              <Typography>Sunday service</Typography>
-            </ListItem>
-            <ListItem>
-              <Typography>Friday service</Typography>
-            </ListItem>
-          </List>
+        <Grid className={classes.sideContent} item sm={12} md={3} lg={3}>
+          <Container>
+            <div>
+              <InputBase placeholder="Search…" />
+            </div>
+            <Box bgcolor="primary.dark">
+              <Typography color="primary">SERMONS</Typography>
+            </Box>
+            <List justify="right">
+              <ListItem>
+                <Button>New</Button>
+              </ListItem>
+              <ListItem>
+                <Button>Popular</Button>
+              </ListItem>
+              <ListItem>
+                <Button>Series</Button>
+              </ListItem>
+              <ListItem>
+                <Button>Sunday service</Button>
+              </ListItem>
+              <ListItem>
+                <Button>Friday service</Button>
+              </ListItem>
+            </List>
+          </Container>
           <GalleryCheckout />
         </Grid>
       </Grid>
