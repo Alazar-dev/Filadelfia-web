@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Link as RouterLink } from "react-router-dom";
+import {Link as RouterLink } from "react-router-dom";
 import Logo from "../../assets/Header/Logo.png";
 import TopBar from "./TopBar";
 
