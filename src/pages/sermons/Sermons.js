@@ -23,10 +23,6 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     marginTop: 30,
   },
-  //   mainContentImgs: {
-  //     width: "171px",
-  //     height: "136px",
-  //   },
 }));
 
 const SermonsPage = () => {
