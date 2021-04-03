@@ -3,7 +3,6 @@ default:
 
 stages:
   - build
-  - test
   - docker-build
   - deploy
 
@@ -28,28 +27,8 @@ build:
       - build
       - node_modules/
 
-test_master_branch:
-  stage: test
-  image: node
-  tags:
-  - gitlab-react
-  
-  script:
-    - echo "Testing App"
-    - CI=true npm test -- -u
-    - echo "Test successfully!"
-  
-test_feature_branch:
-  stage: test
-  image: node
-  tags:
-  - gitlab-react
-  only:
-    - /^feature-.*$/
-  script:
-    - echo "Testing App"
-    - CI=true npm test -- -u
-    - echo "Test successfully!"
+
+
 
 docker-build:
   stage: docker-build
@@ -65,19 +44,11 @@ docker-build:
     - docker build -t $TAG_COMMIT -t $TAG_LATEST .
     - docker push $TAG_COMMIT
     - docker push $TAG_LATEST
+  only:
+    refs:
+      - master
 
-feature-job:
-  tags:
-  - gitlab-react
-  script:
-    - echo "Testing App"
-    - npm install
-    - CI=true npm test -- -u
-    -  npm run build
-    - echo "Test successfully!"
-  rules:
-    - if: '$CI_MERGE_REQUEST_SOURCE_BRANCH_NAME =~ /^feature/ && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"'
-      when: always
+
     
 
 deploy-firebase:
