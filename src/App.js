@@ -6,20 +6,22 @@ import theme from "./themes/Theme";
 import Header from "./layouts/header/AppBar";
 import Home from "./pages/Home";
 import Footer from "./layouts/footer/Footer";
+import { CssBaseline } from "@material-ui/core";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Router>
-          <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+          <Router>
+            <CssBaseline />
             <Header />
             <Switch>
               <Route path="/" component={Home} />
             </Switch>
             <Footer />
-          </ThemeProvider>
-        </Router>
+          </Router>
+        </ThemeProvider>
       </div>
     );
   }
