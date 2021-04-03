@@ -27,8 +27,8 @@ const CheckoutGallery = () => {
         <Typography color="secondary">CHECKOUT OUT GALLERY</Typography>
       </Box>
       <Grid container justify="center">
-        {[photo1, photo2, photo3, photo4, photo5, photo6].map((imgs) => (
-          <Grid key={imgs} item xs={4}>
+        {[photo1, photo2, photo3, photo4, photo5, photo6].map((imgs, index) => (
+          <Grid key={index} item xs={4}>
             <img className={classes.imgs} src={imgs} alt="" />
           </Grid>
         ))}
