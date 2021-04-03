@@ -5,11 +5,10 @@ import {
   InputBase,
   List,
   ListItem,
-  Container,
   Card,
   CardContent,
 } from "@material-ui/core";
-import { makeStyles, fade } from "@material-ui/core/styles";
+import { makeStyles} from "@material-ui/core/styles";
 
 import GalleryRow from "../../components/gallery/GalleryRow";
 import GalleryCheckout from "../../components/gallery/GalleryCheckout";
