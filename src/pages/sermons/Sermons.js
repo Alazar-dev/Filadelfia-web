@@ -8,8 +8,10 @@ import {
   CardContent,
   Button,
   Container,
+  Breadcrumbs,
+  makeStyles,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 import GalleryRow from "../../components/gallery/GalleryRow";
 import GalleryCheckout from "../../components/gallery/GalleryCheckout";
@@ -29,7 +31,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 30,
   },
   sermonBox: {
-      padding: "10px 0"
+    padding: "10px 0",
+  },
+  breadcrubsLink: {
+      color: "white"
   }
 }));
 
@@ -41,6 +46,14 @@ const SermonsPage = () => {
         <Typography align="center" variant="h5">
           LISTEN TO SERMONS
         </Typography>
+        <Breadcrumbs >
+          <Link className={classes.breadcrubsLink} to="/" color="primary">
+            HOME
+          </Link>
+          <Link className={classes.breadcrubsLink} to="/sermons">
+            SERMON
+          </Link>
+        </Breadcrumbs>
       </Box>
       <Grid justify="center" container>
         <Grid item sm={6} md={9} lg={6}>
