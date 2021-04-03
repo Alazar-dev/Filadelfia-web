@@ -23,7 +23,7 @@ const GalleryCheckout = () => {
   return (
     <Container>
       <Box bgcolor="primary.dark">
-        <Typography color="primary">CHECKOUT OUT GALLERY</Typography>
+        <Typography color="secondary">CHECKOUT OUT GALLERY</Typography>
       </Box>
       <Grid container justify="center">
         {[photo1, photo2, photo3, photo4, photo5, photo6].map((imgs) => (

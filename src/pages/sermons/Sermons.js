@@ -94,7 +94,7 @@ const SermonsPage = () => {
               <InputBase placeholder="Search…" />
             </div>
             <Box bgcolor="primary.dark">
-              <Typography color="primary">SERMONS</Typography>
+              <Typography color="secondary">SERMONS</Typography>
             </Box>
             <List justify="right">
               <ListItem>
