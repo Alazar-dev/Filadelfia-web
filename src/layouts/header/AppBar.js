@@ -182,12 +182,10 @@ export default function Appbar() {
 
   return (
     <AppBar position="static" color="default" className={classes.header}>
-      <BrowserRouter>
-        <TopBar />
-        <div className={classes.navbar}>
-          {mobileView ? <DisplayMobile /> : <DisplayDesktop />}
-        </div>
-      </BrowserRouter>
+      <TopBar />
+      <div className={classes.navbar}>
+        {mobileView ? <DisplayMobile /> : <DisplayDesktop />}
+      </div>
     </AppBar>
   );
 }
