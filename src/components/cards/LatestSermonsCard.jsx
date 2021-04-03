@@ -4,9 +4,9 @@ import { Card, Grid } from "@material-ui/core/";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
-import SupermacyImg from "../../assets/Home/Sermon/placeholder1.png";
-import GospelImg from "../../assets/Home/Sermon/placeholder3.png";
-import TeachImg from "../../assets/Home/Sermon/placeholder2.png";
+import ImgSupermacy from "../../assets/Home/Sermon/placeholder1";
+import ImgGospel from "../../assets/Home/Sermon/placeholder3.png";
+import ImgTeach from "../../assets/Home/Sermon/placeholder2.png";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -42,7 +42,7 @@ const LatestSermonsCards = () => {
 
       <Grid item>
         <Card className={classes.root}>
-          <img src={SupermacyImg} alt="" />
+          <img src={ImgSupermacy} alt="" />
           <div className={classes.details}>
             <CardContent className={classes.content}>
               <Typography className={classes.title} variant="h6">
@@ -57,7 +57,7 @@ const LatestSermonsCards = () => {
       </Grid>
       <Grid item>
         <Card className={classes.root}>
-          <img src={TeachImg} alt="" />
+          <img src={ImgTeach} alt="" />
           <div className={classes.details}>
             <CardContent className={classes.content}>
               <Typography
@@ -76,7 +76,7 @@ const LatestSermonsCards = () => {
       </Grid>
       <Grid item>
         <Card className={classes.root}>
-          <img src={GospelImg} alt="" />
+          <img src={ImgGospel} alt="" />
           <div className={classes.details}>
             <CardContent className={classes.content}>
               <Typography className={classes.title} variant="subtitle2">

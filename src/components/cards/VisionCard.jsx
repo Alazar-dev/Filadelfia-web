@@ -4,9 +4,9 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { Grid, Paper } from "@material-ui/core";
 
-import Bible from "../../assets/Home/Our Vision/Layer 1.png";
-import Alert from "../../assets/Home/Our Vision/Icon1.png";
-import Church from "../../assets/Home/Our Vision/icon.png";
+import IconBible from "../../assets/Home/Our Vision/Layer 1.png";
+import IconAlert from "../../assets/Home/Our Vision/Icon1.png";
+import IconChurch from "../../assets/Home/Our Vision/icon.png";
 
 const useStyles = makeStyles({
   secondComponent: {
@@ -51,7 +51,7 @@ const VisionCard = () => {
                   DAILY PRAYERS
                 </Typography>
                 <div className={classes.img}>
-                  <img src={Alert} alt="Daily Prayers_Image" />
+                  <img src={IconAlert} alt="Daily Prayers_Image" />
                 </div>
               </CardContent>
             </Card>
@@ -62,7 +62,7 @@ const VisionCard = () => {
             <Card className={classes.root}>
               <CardContent>
                 <div className={classes.imgCenter}>
-                  <img src={Bible} alt="Daily Prayers_Image" />
+                  <img src={IconBible} alt="Daily Prayers_Image" />
                 </div>
 
                 <Typography variant="subtitle1" component="h2">
@@ -80,7 +80,7 @@ const VisionCard = () => {
                   NEXT SERMONS
                 </Typography>
                 <div className={classes.img}>
-                  <img src={Church} alt="Daily Prayers_Image" />
+                  <img src={IconChurch} alt="Daily Prayers_Image" />
                 </div>
               </CardContent>
             </Card>
