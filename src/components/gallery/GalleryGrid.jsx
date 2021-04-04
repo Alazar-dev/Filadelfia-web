@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid, Button, Typography, Box, Container } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Grid, Box, Container } from "@material-ui/core";
 
 import img3 from "../../assets/Gallery/img-3.png";
 import img4 from "../../assets/Gallery/img-4.png";
