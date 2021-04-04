@@ -43,7 +43,7 @@ function Savior() {
   return (
     <Box
       py={5}
-      my={2}
+      mt={2}
       display="flex"
       justifyContent="center"
       flexDirection="column"
