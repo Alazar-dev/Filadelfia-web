@@ -2,6 +2,7 @@ import { Box } from "@material-ui/core";
 import React from "react";
 import CoverImage from "../../components/home/CoverImage";
 import Donate from "../../components/home/Donate";
+import Gallery from "../../components/home/Gallery";
 import LatestSermon from "../../components/home/LatestSermon";
 import SermonEvents from "../../components/home/latestSermons/SermonEvents";
 import OurVisions from "../../components/home/OurVisions";
@@ -16,6 +17,7 @@ function Home() {
       <Donate />
       <SermonEvents />
       <Savior />
+      <Gallery />
     </Box>
   );
 }
