@@ -56,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.primary.main,
   },
   icons: {
+    display: "flex",
     background: theme.palette.secondary.dark,
     color: theme.palette.primary.light,
     justifyContent: "center",
@@ -74,13 +75,29 @@ const LatestSermonsCards = () => {
         </span>
       </Box>
       <Box py={5}>
-        <Card>
-          <Grid container>
-            <SermonItem image={TeachImg} />
-            <SermonItem image={GospelImg} />
-            <SermonItem image={SupermacyImg} />
+        <Grid container spacing={3}>
+          <Grid item>
+            <Card>
+              <Grid container spacing={3}>
+                <SermonItem image={TeachImg} />
+              </Grid>
+            </Card>
           </Grid>
-        </Card>
+          <Grid item>
+            <Card>
+              <Grid container spacing={3}>
+                <SermonItem image={GospelImg} />
+              </Grid>
+            </Card>
+          </Grid>
+          <Grid item>
+            <Card>
+              <Grid container spacing={3}>
+                <SermonItem image={SupermacyImg} />
+              </Grid>
+            </Card>
+          </Grid>
+        </Grid>
       </Box>
     </>
   );
