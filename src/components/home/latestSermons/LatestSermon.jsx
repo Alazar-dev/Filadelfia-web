@@ -86,14 +86,14 @@ const LatestSermonsCards = () => {
           <Grid item>
             <Card>
               <Grid container spacing={3}>
-                <SermonItem image={TeachImg} />
+                <SermonItem image={GospelImg} />
               </Grid>
             </Card>
           </Grid>
           <Grid item>
             <Card>
               <Grid container spacing={3}>
-                <SermonItem image={TeachImg} />
+                <SermonItem image={SupermacyImg} />
               </Grid>
             </Card>
           </Grid>
