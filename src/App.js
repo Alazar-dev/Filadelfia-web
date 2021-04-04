@@ -4,7 +4,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./themes/Theme";
 
 import Header from "./layouts/header/AppBar";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 import Footer from "./layouts/footer/Footer";
 import { CssBaseline } from "@material-ui/core";
 
