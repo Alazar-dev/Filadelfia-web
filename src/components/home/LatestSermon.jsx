@@ -51,11 +51,13 @@ const useStyles = makeStyles((theme) =>
     },
     share: {
       background: theme.palette.primary.dark,
+      color: theme.palette.primary.light,
     },
     px3: {
       paddingLeft: `${theme.spacing(3)}px`,
       paddingRight: `${theme.spacing(3)}px`,
       marginRight: `${theme.spacing(3)}px`,
+      [theme.breakpoints.down("md")]: { marginBottom: `${theme.spacing(3)}px` },
     },
     py3: {
       paddingBottom: `${theme.spacing(3)}px`,
@@ -69,7 +71,7 @@ const useStyles = makeStyles((theme) =>
 function LatestSermon() {
   const classes = useStyles();
   return (
-    <Grid spacing={2} container>
+    <Grid container>
       <Grid className={classes.left} item xs={4}>
         <Box className={classes.textRight} px={3} pt={3}>
           <Typography
@@ -96,7 +98,7 @@ function LatestSermon() {
           <Typography component="p" className={classes.sermonText}>
             In These Last Days, God Has Spoken by a Son
           </Typography>
-          <Box display="flex">
+          <Box display="flex" flexWrap="wrap">
             <Button
               startIcon={<CloudDownload />}
               className={classes.download + " " + classes.px3}
