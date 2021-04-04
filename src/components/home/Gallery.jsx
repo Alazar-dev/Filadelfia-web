@@ -123,7 +123,7 @@ export const GalleryButton = () => {
 export const ButtonItem = ({ active, index, text, onClick }) => {
   const classes = useStyles();
   return (
-    <Grid item alignContent="center">
+    <Grid item>
       <Button
         className={classes.buttonText}
         onClick={() => onClick(index)}

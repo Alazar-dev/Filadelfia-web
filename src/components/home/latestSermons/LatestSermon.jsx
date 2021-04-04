@@ -103,7 +103,7 @@ export const SermonItem = ({ image }) => {
   const classes = useStyles();
   return (
     <Grid item container>
-      <Grid item md="3" xs="12">
+      <Grid item md={3} xs={12}>
         <CardMedia className={classes.cover} image={image}>
           <Typography color="textSecondary" variant="body1">
             MENTORSHIP
@@ -113,7 +113,7 @@ export const SermonItem = ({ image }) => {
           </Typography>
         </CardMedia>
       </Grid>
-      <Grid item md="8">
+      <Grid item md={8}>
         <CardContent>
           <Typography className={classes.title} variant="subtitle2">
             THE AWESOME TEACH COMPASSION OF GOD IN JONAH GOD'S GREATEST GIFT
@@ -122,7 +122,7 @@ export const SermonItem = ({ image }) => {
           <CategoryText />
         </CardContent>
       </Grid>
-      <Grid item md="1" className={classes.icons}>
+      <Grid item md={1} className={classes.icons}>
         <Box>
           <List>
             <ListItem>

@@ -149,7 +149,7 @@ export const EventItem = () => {
           </Typography>
         </Box>
       </Grid>
-      <Grid alignItems="center" item xs={9}>
+      <Grid item xs={9}>
         <Typography
           color="textPrimary"
           className={classes.eventTitle}
