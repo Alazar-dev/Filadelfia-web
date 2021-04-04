@@ -127,7 +127,7 @@ export const ButtonItem = ({ active, index, text, onClick }) => {
       <Button
         className={classes.buttonText}
         onClick={() => onClick(index)}
-        color={active === index ? "primary" : ""}
+        color={active === index ? "primary" : "inherit"}
       >
         {text}
       </Button>
