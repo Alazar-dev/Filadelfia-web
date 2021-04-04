@@ -8,10 +8,8 @@ import {
   CardContent,
   Button,
   Container,
-  Breadcrumbs,
   makeStyles,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
 
 import GalleryRow from "../../components/gallery/GalleryRow";
 import GalleryCheckout from "../../components/gallery/GalleryCheckout";
@@ -22,6 +20,7 @@ import ImgGospel from "../../assets/Sermons/placeholder3.png";
 import ImgChurch from "../../assets/Sermons/placeholder4.png";
 
 import headerImg from "../../assets/Sermons/Sermon.jpg";
+import BreadcumbHero from "../../components/breadcrumbs/BreadcrumbsHero";
 const useStyles = makeStyles((theme) => ({
   headerImg: {
     width: "100%",
@@ -34,27 +33,15 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px 0",
   },
   breadcrubsLink: {
-      color: "white"
-  }
+    color: "white",
+  },
 }));
 
 const SermonsPage = () => {
   const classes = useStyles();
   return (
     <>
-      <Box bgcolor="secondary.dark" color="primary.light">
-        <Typography align="center" variant="h5">
-          LISTEN TO SERMONS
-        </Typography>
-        <Breadcrumbs >
-          <Link className={classes.breadcrubsLink} to="/" color="primary">
-            HOME
-          </Link>
-          <Link className={classes.breadcrubsLink} to="/sermons">
-            SERMON
-          </Link>
-        </Breadcrumbs>
-      </Box>
+      <BreadcumbHero title="LISTEN TO SERMONS" />
       <Grid justify="center" container>
         <Grid item sm={6} md={9} lg={6}>
           <img className={classes.headerImg} src={headerImg} alt="" />

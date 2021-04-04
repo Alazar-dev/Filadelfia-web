@@ -1,7 +1,11 @@
+import BreadcumbHero from "../../components/breadcrumbs/BreadcrumbsHero";
+
 const Contact = () => {
-    return ( 
-        <div>Contact Page</div>
-     );
-}
- 
+  return (
+    <div>
+      <BreadcumbHero title="Gallery" />
+    </div>
+  );
+};
+
 export default Contact;
