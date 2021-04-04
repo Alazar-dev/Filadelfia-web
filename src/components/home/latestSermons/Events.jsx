@@ -70,7 +70,7 @@ export function EventsCard() {
   return (
     <>
       <Box py={5} display="flex">
-        <Typography variant="h4">Latest Sermons</Typography>
+        <Typography variant="h4">Events </Typography>
         <span className={classes.cross}>
           <img src={Cross} alt="Cross" />
         </span>

@@ -5,6 +5,7 @@ import Donate from "../../components/home/Donate";
 import LatestSermon from "../../components/home/LatestSermon";
 import SermonEvents from "../../components/home/latestSermons/SermonEvents";
 import OurVisions from "../../components/home/OurVisions";
+import Savior from "../../components/home/Savior";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <OurVisions />
       <Donate />
       <SermonEvents />
+      <Savior />
     </Box>
   );
 }
