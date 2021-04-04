@@ -7,6 +7,7 @@ import LatestSermon from "../../components/home/LatestSermon";
 import SermonEvents from "../../components/home/latestSermons/SermonEvents";
 import OurVisions from "../../components/home/OurVisions";
 import Savior from "../../components/home/Savior";
+import Services from "../../components/home/Services";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <SermonEvents />
       <Savior />
       <Gallery />
+      <Services />
     </Box>
   );
 }
