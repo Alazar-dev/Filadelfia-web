@@ -8,6 +8,7 @@ import SermonEvents from "../../components/home/latestSermons/SermonEvents";
 import OurVisions from "../../components/home/OurVisions";
 import Savior from "../../components/home/Savior";
 import Services from "../../components/home/Services";
+import Testimony from "../../components/home/Testimony";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <Savior />
       <Gallery />
       <Services />
+      <Testimony />
     </Box>
   );
 }
