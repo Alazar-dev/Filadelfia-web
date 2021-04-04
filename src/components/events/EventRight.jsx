@@ -25,7 +25,6 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {},
     search: {
-      margin: "10px 20px",
       color: theme.palette.text.primary,
       background: theme.palette.secondary.main,
       "& .MuiFormLabel-root": {
@@ -58,9 +57,10 @@ function EventRight() {
   return (
     <Grid item md={4}>
       <Box py={5}>
-        <Box>
+        <Box py={2}>
           <TextField
             className={classes.search}
+            fullWidth
             label="Search"
             variant="outlined"
           />
