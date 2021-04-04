@@ -21,6 +21,9 @@ const useStyles = makeStyles({
   footerHeadingThree: {
     marginTop: 35,
     textAlignLast: "right",
+    "@media (max-width: 900px)": {
+      textAlignLast: "center"
+    }
   },
   listItems: {
     textAlignLast: "right",
@@ -34,6 +37,17 @@ const useStyles = makeStyles({
   quickLinks: {
     textAlign: "center",
   },
+  logo: {
+    marginTop: 15,
+    "@media (max-width: 959px)": {
+      textAlignLast: "center"
+    }
+  },
+  logoText: {
+    "@media (max-width: 959px)": {
+      textAlign: "right"
+    }
+  }
 });
 
 const Footer = () => {
@@ -42,17 +56,17 @@ const Footer = () => {
     <>
       <Box className={classes.root} bgcolor="secondary.dark">
         <Grid justify="center" container>
-          <Grid style={{ marginTop: 15 }} item xs={12} md={6} lg={3}>
+          <Grid className={classes.logo} item xs={12} sm={12} md={3}>
             <Link to="/">
               <img src={Logo} alt="" />
             </Link>
-            <Typography color="secondary" variant="subtitle2">
-              Phillipisiyos Church have a prayers wall and Sermons.Phillipisiyos
+            <Typography className={classes.logText} color="secondary" variant="subtitle2">
+              Phillipisiyos Church have a prayers wall and Sermons. Phillipisiyos
               Church is a healing, prophetic church all about giving the gifts
               of Jesus to God's people.
             </Typography>
           </Grid>
-          <Grid item xs={12} lg={3}>
+          <Grid item xs={12} sm={12} md={3}>
             <Typography
               className={classes.footerHeadingTwo}
               color="primary"
@@ -89,7 +103,7 @@ const Footer = () => {
             </List>
           </Grid>
 
-          <Grid item xs={12} lg={3}>
+          <Grid item xs={12} sm={12} md={3}>
             <Typography
               className={classes.footerHeadingThree}
               color="primary"
