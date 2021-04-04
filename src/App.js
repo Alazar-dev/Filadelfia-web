@@ -3,22 +3,24 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./themes/Theme";
 
-import Home from "./pages/Home";
+import Header from "./layouts/header/AppBar";
+import Home from "./pages/home/Home";
 import Sermons from "./pages/sermons/Sermons";
 import PrayerWall from "./pages/prayerwall/PrayerWall";
 import Events from "./pages/events/Events";
 import Gallery from "./pages/gallery/Gallery";
 import Contact from "./pages/contact/Contact";
 
-import Header from "./layouts/header/AppBar";
 import Footer from "./layouts/footer/Footer";
+import { CssBaseline } from "@material-ui/core";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Router>
-          <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme}>
+          <Router>
+            <CssBaseline />
             <Header />
             <Switch>
               <Route exact path="/" component={Home} />
@@ -29,8 +31,8 @@ class App extends Component {
               <Route exact path="/contact" component={Contact} />
             </Switch>
             <Footer />
-          </ThemeProvider>
-        </Router>
+          </Router>
+        </ThemeProvider>
       </div>
     );
   }

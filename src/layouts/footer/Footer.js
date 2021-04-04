@@ -7,7 +7,7 @@ import Logo from "../../assets/Footer/Logo.png";
 const useStyles = makeStyles({
   text: {
     textAlign: "center",
-    fontSize: "10px"
+    fontSize: "10px",
   },
   link: {
     textDecoration: "none",
