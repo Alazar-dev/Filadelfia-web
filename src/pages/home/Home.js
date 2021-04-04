@@ -1,5 +1,6 @@
 import { Box } from "@material-ui/core";
 import React from "react";
+import BottomGallery from "../../components/home/BottomGallery";
 import CoverImage from "../../components/home/CoverImage";
 import Donate from "../../components/home/Donate";
 import Gallery from "../../components/home/Gallery";
@@ -22,6 +23,7 @@ function Home() {
       <Gallery />
       <Services />
       <Testimony />
+      <BottomGallery />
     </Box>
   );
 }
