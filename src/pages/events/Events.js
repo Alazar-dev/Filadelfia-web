@@ -1,7 +1,11 @@
+import BreadcumbHero from "../../components/breadcrumbs/BreadcrumbsHero";
+
 const Events = () => {
-    return ( 
-        <div>Events Page</div>
-     );
-}
- 
+  return (
+    <div>
+      <BreadcumbHero title="Gallery" />
+    </div>
+  );
+};
+
 export default Events;
