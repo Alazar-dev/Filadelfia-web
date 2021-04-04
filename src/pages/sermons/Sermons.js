@@ -8,10 +8,8 @@ import {
   CardContent,
   Button,
   Container,
-  Breadcrumbs,
   makeStyles,
 } from "@material-ui/core";
-import { Link } from "react-router-dom";
 
 import GalleryRow from "../../components/gallery/GalleryRow";
 import GalleryCheckout from "../../components/gallery/GalleryCheckout";
