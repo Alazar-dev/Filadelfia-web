@@ -52,6 +52,10 @@ const useStyles = makeStyles((theme) =>
     share: {
       background: theme.palette.primary.dark,
       color: theme.palette.primary.light,
+      "&:hover": {
+        background: theme.palette.primary.dark,
+        color: theme.palette.primary.main,
+      },
     },
     px3: {
       paddingLeft: `${theme.spacing(3)}px`,
