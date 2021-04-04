@@ -1,10 +1,4 @@
-import {
-  Box,
-  Button,
-  createStyles,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
+import { Box, createStyles, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
 import Cross from "../../assets/Home/Our Vision/Cross.png";
 

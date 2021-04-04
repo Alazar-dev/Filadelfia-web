@@ -5,7 +5,7 @@ import img5 from "../../assets/Gallery/img-5.png";
 import img6 from "../../assets/Gallery/img6.png";
 import img7 from "../../assets/Gallery/img-7.png";
 import img8 from "../../assets/Gallery/img-8.png";
-import { Box, createStyles, Grid, makeStyles } from "@material-ui/core";
+import { createStyles, Grid, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
