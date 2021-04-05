@@ -30,7 +30,7 @@ const GalleryRow = () => {
     <Grid spacing={1} container>
       <CssBaseLine />
       {[img3, img4, img5, img6, img7, img8].map((imgs) => (
-        <Grid key={imgs} item lg={2} md={4} xs={6}>
+        <Grid key={imgs} item xs={12} sm={6} md={4} lg={2}>
           <img src={imgs} className={classes.img} alt="" />
         </Grid>
       ))}
