@@ -48,6 +48,11 @@ const PrayerWall = () => {
   const [businessLikes, setBusinessLikes] = useState(0);
   const [healthcareLikes, setHealthcareLikes] = useState(0);
   const [mediaLikes, setMediaLikes] = useState(0);
+  const [active, setActive] = useState(0)
+
+  const handleClick = (index) => {
+    setActive(index);
+  };
 
   return (
     <div>
@@ -193,23 +198,23 @@ const PrayerWall = () => {
             />
           </div>
           <Box bgcolor="primary.dark">
-            <Typography color="primary">PRAYERS</Typography>
+            <Typography color="secondary">PRAYERS</Typography>
           </Box>
           <List>
             <ListItem>
-              <Typography>New</Typography>
+              <ButtonItem active={active}  index={1} onClick={handleClick} text="Church">Church</ButtonItem>
             </ListItem>
             <ListItem>
-              <Typography>Popular</Typography>
+              <ButtonItem active={active} index={2} onClick={handleClick} text="Country">Country</ButtonItem>
             </ListItem>
             <ListItem>
-              <Typography>Series</Typography>
+              <ButtonItem active={active}  index={3} onClick={handleClick} text="Personal">Personal</ButtonItem>
             </ListItem>
             <ListItem>
-              <Typography>Sunday service</Typography>
+              <ButtonItem active={active}  index={4} onClick={handleClick} text="Family">Family</ButtonItem>
             </ListItem>
             <ListItem>
-              <Typography>Friday service</Typography>
+              <ButtonItem active={active}  index={5} onClick={handleClick} text="Government">Government</ButtonItem>
             </ListItem>
           </List>
           <CheckoutGallery />
@@ -217,6 +222,21 @@ const PrayerWall = () => {
       </Grid>
       <GalleryRow />
     </div>
+  );
+};
+
+export const ButtonItem = ({ active, index, text, onClick }) => {
+  const classes = useStyles();
+  return (
+    <Grid item>
+      <Button
+        className={classes.buttonText}
+        onClick={() => onClick(index)}
+        color={active === index ? "primary" : "inherit"}
+      >
+        {text}
+      </Button>
+    </Grid>
   );
 };
 
