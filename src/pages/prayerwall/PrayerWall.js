@@ -22,6 +22,7 @@ import CheckoutGallery from "../../components/gallery/GalleryCheckout";
 const useStyles = makeStyles({
   headerImg: {
     width: "100%",
+    marginTop: 35,
   },
   favoriteButton: {
     cursor: "pointer",
@@ -33,7 +34,8 @@ const useStyles = makeStyles({
   likes: {
     marginTop: 9,
   },
-  mobileView: {
+  sideContent: {
+    marginTop: 35,
     "@media (max-width: 900px)": {
       display: "none",
     },
@@ -183,7 +185,7 @@ const PrayerWall = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid className={classes.mobileView} item xs={2}>
+        <Grid className={classes.sideContent} item xs={2}>
           <div>
             <InputBase
               placeholder="Search…"
