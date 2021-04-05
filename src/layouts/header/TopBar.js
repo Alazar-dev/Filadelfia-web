@@ -10,7 +10,6 @@ import Location from "../../assets/Header/Icon Location.png";
 import Web from "../../assets/Header/Icon Web.png";
 const useStyles = makeStyles({
   root: {
-    height: "45px",
     "@media (max-width: 900px)": {
       // display: 'none',
       display: "none",

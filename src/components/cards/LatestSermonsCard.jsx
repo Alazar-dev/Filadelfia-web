@@ -4,7 +4,7 @@ import { Card, Grid } from "@material-ui/core/";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
-import ImgSupermacy from "../../assets/Home/Sermon/placeholder1";
+import ImgSupermacy from "../../assets/Home/Sermon/placeholder1.png";
 import ImgGospel from "../../assets/Home/Sermon/placeholder3.png";
 import ImgTeach from "../../assets/Home/Sermon/placeholder2.png";
 

@@ -1,7 +1,11 @@
+import BreadcumbHero from "../../components/breadcrumbs/BreadcrumbsHero";
+
 const PrayerWall = () => {
-    return (  
-        <div>PrayerWall Page</div>
-    );
-}
- 
+  return (
+    <div>
+      <BreadcumbHero title="Prayer Wall" />
+    </div>
+  );
+};
+
 export default PrayerWall;
