@@ -21,7 +21,8 @@ import GalleryCheckout from "../../components/gallery/GalleryCheckout";
 
 const useStyles = makeStyles({
   headerImg: {
-    width: "100%",
+    width: "870px",
+    height: "256px",
     marginTop: 35,
   },
   favoriteButton: {
@@ -190,7 +191,7 @@ const PrayerWall = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid className={classes.sideContent} item xs={2}>
+        <Grid className={classes.sideContent} item >
           <div>
             <InputBase
               placeholder="Search…"
