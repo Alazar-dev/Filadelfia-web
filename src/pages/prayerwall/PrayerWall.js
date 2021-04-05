@@ -17,7 +17,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import BreadcumbHero from "../../components/breadcrumbs/BreadcrumbsHero";
 import headerImg from "../../assets/Prayer Wall/i.png";
 import GalleryRow from "../../components/gallery/GalleryRow";
-import CheckoutGallery from "../../components/gallery/GalleryCheckout";
+import GalleryCheckout from "../../components/gallery/GalleryCheckout";
 
 const useStyles = makeStyles({
   headerImg: {
@@ -217,7 +217,7 @@ const PrayerWall = () => {
               <ButtonItem active={active}  index={5} onClick={handleClick} text="Government">Government</ButtonItem>
             </ListItem>
           </List>
-          <CheckoutGallery />
+          <GalleryCheckout />
         </Grid>
       </Grid>
       <GalleryRow />
