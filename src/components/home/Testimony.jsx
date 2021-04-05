@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       background: "#ffffff 0% 0% no-repeat padding-box",
-      height: "30vh",
     },
     qoute: {
       color: theme.palette.primary.main,
