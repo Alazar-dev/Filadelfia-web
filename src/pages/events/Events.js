@@ -9,7 +9,7 @@ const Events = () => {
       <BreadcumbHero title="EVENTS SCHEDULE" />
       <Box py={5}>
         <Container>
-          <Grid container spacing={2}>
+          <Grid justify="center" container spacing={2}>
             <EventLeft />
             <EventRight />
           </Grid>

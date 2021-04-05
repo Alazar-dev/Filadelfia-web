@@ -86,14 +86,14 @@ function EventLeft() {
           <img className={classes.image} src={Event} alt="events coming" />
         </Box>
         <Box>
-          <Grid container spacing={4}>
+          <Grid container justify="center" spacing={4}>
             <EventItem />
             <EventItem />
             <EventItem />
             <EventItem />
           </Grid>
         </Box>
-        <Box py={5}>
+        <Box display="flex" justifyContent="center" py={5}>
           <Pagination
             color="primary"
             count={10}
