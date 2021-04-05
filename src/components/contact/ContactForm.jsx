@@ -8,7 +8,9 @@ import {
 } from "@material-ui/core";
 import React, { useState } from "react";
 import ContactTitle from "./ContactTitle";
-// import { useDocumentAdd, useDocumentRef } from "@epha123/fire-hooks";
+import firebase from "../../config/firebaseConfig";
+import { useCollectionRef, useDocumentAdd } from "@epha123/fire-hooks";
+import { Alert, AlertTitle } from "@material-ui/lab";
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -43,6 +45,10 @@ function ContactForm() {
   });
 
   const [active, setactive] = useState(false);
+  firebase.firestore();
+
+  const { loading, error, handleAdd } = useDocumentAdd();
+  const addContact$ = useCollectionRef("contacts");
 
   const handleChange = (e) => {
     const { value, name } = e.target;
@@ -56,6 +62,7 @@ function ContactForm() {
     e.preventDefault();
     const { lastName, firstName, email, message } = values;
     if (lastName !== "" && firstName !== "" && email !== "" && message !== "") {
+      handleAdd(values, addContact$.doc());
       console.log(values);
     } else {
       setactive(true);
@@ -65,6 +72,17 @@ function ContactForm() {
     <Grid item lg={8}>
       <ContactTitle title="GET IN TOUCH" />
       <Box py={2}>
+        {error && (
+          <Alert severity="error" title="Error" variant="filled">
+            {error.message}
+          </Alert>
+        )}
+        {!error && loading === false && (
+          <Alert severity="success">
+            <AlertTitle>Success</AlertTitle>
+            Successfully Sent!
+          </Alert>
+        )}
         <form>
           <div>
             <TextField
@@ -117,6 +135,7 @@ function ContactForm() {
           <Button
             type="submit"
             onClick={handleSubmit}
+            disabled={loading}
             className={classes.button}
           >
             Send Message

@@ -1,37 +1,39 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./themes/Theme";
-
-import Header from "./layouts/header/AppBar";
-import Home from "./pages/home/Home";
-import Sermons from "./pages/sermons/Sermons";
-import PrayerWall from "./pages/prayerwall/PrayerWall";
-import Events from "./pages/events/Events";
-import Gallery from "./pages/gallery/Gallery";
-import Contact from "./pages/contact/Contact";
+import { CssBaseline, LinearProgress } from "@material-ui/core";
 
 import Footer from "./layouts/footer/Footer";
-import { CssBaseline } from "@material-ui/core";
+import Header from "./layouts/header/AppBar";
+
+const Home = lazy(() => import("./pages/home/Home"));
+const Sermons = lazy(() => import("./pages/sermons/Sermons"));
+const PrayerWall = lazy(() => import("./pages/prayerwall/PrayerWall"));
+const Events = lazy(() => import("./pages/events/Events"));
+const Gallery = lazy(() => import("./pages/gallery/Gallery"));
+const Contact = lazy(() => import("./pages/contact/Contact"));
 
 class App extends Component {
   render() {
     return (
       <div>
         <ThemeProvider theme={theme}>
-          <Router>
-            <CssBaseline />
-            <Header />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/sermons" component={Sermons} />
-              <Route exact path="/prayerwall" component={PrayerWall} />
-              <Route exact path="/events" component={Events} />
-              <Route exact path="/gallery" component={Gallery} />
-              <Route exact path="/contact" component={Contact} />
-            </Switch>
-            <Footer />
-          </Router>
+          <Suspense fallback={<LinearProgress color="primary" />}>
+            <Router>
+              <CssBaseline />
+              <Header />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/sermons" component={Sermons} />
+                <Route exact path="/prayerwall" component={PrayerWall} />
+                <Route exact path="/events" component={Events} />
+                <Route exact path="/gallery" component={Gallery} />
+                <Route exact path="/contact" component={Contact} />
+              </Switch>
+              <Footer />
+            </Router>
+          </Suspense>
         </ThemeProvider>
       </div>
     );
