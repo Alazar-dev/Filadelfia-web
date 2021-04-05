@@ -50,7 +50,6 @@ const PrayerWall = () => {
   return (
     <div>
       <Box bgcolor="primary.dark" color="info.contrastText">
-        <Typography variant="h1">PRAYER WALL</Typography>
         <BreadcumbHero title="Prayer Wall" />
       </Box>
       <Grid justify="center" container spacing={2}>
