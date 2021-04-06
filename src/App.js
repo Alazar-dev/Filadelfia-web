@@ -9,6 +9,7 @@ import Header from "./layouts/header/AppBar";
 
 const Home = lazy(() => import("./pages/home/Home"));
 const Sermons = lazy(() => import("./pages/sermons/Sermons"));
+const SermonsDetail = lazy(() => import("./pages/sermons/SermonsDetail"))
 const PrayerWall = lazy(() => import("./pages/prayerwall/PrayerWall"));
 const Events = lazy(() => import("./pages/events/Events"));
 const Gallery = lazy(() => import("./pages/gallery/Gallery"));
@@ -26,6 +27,7 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/sermons" component={Sermons} />
+                <Route exact path="/sermonsdetail" component={SermonsDetail} />
                 <Route exact path="/prayerwall" component={PrayerWall} />
                 <Route exact path="/events" component={Events} />
                 <Route exact path="/gallery" component={Gallery} />
