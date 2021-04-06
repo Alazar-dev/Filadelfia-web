@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import { Box, Grid } from "@material-ui/core";
 import Img from "../../assets/Sermon Details/img.png";
 import SermonAudio from "./SermonAudio";
+import SocialLinks from "./SocilalLinks";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -150,6 +151,9 @@ export const EventItem = () => {
                       secondary.
                     </Typography>
                   </CardContent>
+                  <Box alignContent="right">
+                    <SocialLinks />
+                  </Box>
                 </div>
               </Box>
             </Grid>
