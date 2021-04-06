@@ -1,12 +1,12 @@
 import { Box, Container, Grid } from "@material-ui/core";
 import BreadcumbHero from "../../components/breadcrumbs/BreadcrumbsHero";
-import SermonsDetailLeft from "../../components/events/EventLeft";
-import SermonsDetailRight from "../../components/events/EventRight";
+import SermonsDetailLeft from "../../components/sermonsDetail/SermonsDetailLeft";
+import SermonsDetailRight from "../../components/sermonsDetail/SermonsDetailRight";
 
 const Events = () => {
   return (
     <div>
-      <BreadcumbHero title="EVENTS SCHEDULE" />
+      <BreadcumbHero title="SERMONS SCHEDULE" />
       <Box py={5}>
         <Container>
           <Grid justify="center" container spacing={2}>
