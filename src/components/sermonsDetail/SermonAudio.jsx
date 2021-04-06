@@ -8,7 +8,6 @@ import {
 } from "@material-ui/core";
 import { CloudDownload, Share, Notes } from "@material-ui/icons";
 import React from "react";
-import ListeningGroup from "../../assets/Home/Sermon listening/Group 13.png";
 
 const useStyles = makeStyles((theme) =>
   createStyles({

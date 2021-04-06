@@ -4,9 +4,7 @@ import Card from "@material-ui/core/Card";
 import { Pagination } from "@material-ui/lab";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { Box, Button, Grid } from "@material-ui/core";
-import Event from "../../assets/Events/Event.jpg";
-import { AccessTime, LocationOn } from "@material-ui/icons";
+import { Box, Grid } from "@material-ui/core";
 import Img from "../../assets/Sermon Details/img.png";
 import SermonAudio from "./SermonAudio";
 
