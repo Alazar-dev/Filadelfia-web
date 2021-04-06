@@ -4,11 +4,10 @@ import Card from "@material-ui/core/Card";
 import { Pagination } from "@material-ui/lab";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { Box, Button, Grid } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 import headerImg from "../../assets/Sermons/Sermon.jpg";
 import ImgSupermacy from "../../assets/Sermons/placeholder1.png";
 
-import { AccessTime, LocationOn } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
