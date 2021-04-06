@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     background: theme.palette.secondary.dark,
-    color: theme.palette.primary.light,
 
     float: "right",
   },
@@ -25,12 +24,6 @@ const useStyles = makeStyles((theme) => ({
   },
   icons: {
     marginRight: "10px",
-  },
-
-  dateNum: {
-    fontSize: "30px",
-    letterSpacing: "0.9px",
-    textAlign: "left",
   },
   date: {
     fontSize: "14px",
@@ -100,7 +93,7 @@ function SermonsDetailLeft() {
                     </Typography>
                   </Box>
                 </Grid>
-                <Grid item xs={10} md={10}>
+                <Grid item xs={9} md={9}>
                   <Typography className={classes.eventTitle} variant="body1">
                     Phillipisiyos Church Women Yearly Conference
                   </Typography>
@@ -114,8 +107,10 @@ function SermonsDetailLeft() {
                     infront of Miachel Church
                   </Typography>
                 </Grid>
-                <Grid className={classes.itemButton} item md={1}>
-                  <Button className={classes.button}>More</Button>
+                <Grid className={classes.itemButton} item md={2}>
+                  <Button variant="contained" color="primary">
+                    Interested
+                  </Button>
                 </Grid>
               </Grid>
             </CardContent>
