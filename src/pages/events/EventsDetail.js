@@ -3,6 +3,8 @@ import BreadcumbHero from "../../components/breadcrumbs/BreadcrumbsHero";
 import EventsDetailLeft from "../../components/eventsDetail/EventsDetailLeft";
 import EventsDetailRight from "../../components/eventsDetail/EventsDetailRight";
 
+import GalleryRow from "../../components/gallery/GalleryRow"
+
 const EventsDetail = () => {
   return (
     <div>
@@ -15,6 +17,7 @@ const EventsDetail = () => {
           </Grid>
         </Container>
       </Box>
+      <GalleryRow />
     </div>
   );
 };
