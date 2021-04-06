@@ -6,7 +6,7 @@ import EventRight from "../../components/events/EventRight";
 const Events = () => {
   return (
     <div>
-      <BreadcumbHero title="EVENTS SCHEDULE" />
+      <BreadcumbHero title="EVENTS" />
       <Box py={5}>
         <Container>
           <Grid justify="center" container spacing={2}>
