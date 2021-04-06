@@ -8,7 +8,6 @@ import { Box, Grid } from "@material-ui/core";
 import headerImg from "../../assets/Sermons/Sermon.jpg";
 import ImgSupermacy from "../../assets/Sermons/placeholder1.png";
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     lineHeight: "28px",
@@ -124,7 +123,7 @@ export const EventItem = () => {
                       THE AWESOME TEACH OF COMPASSION OF GOD IN JONAH GOD'S
                       GREATEST GIFT
                     </Typography>
-                    <Typography variant="subtitle2" color="textSecondary">
+                    <Box p={1} display="flex" variant="subtitle2" color="textSecondary">
                       <Typography variant="caption" color="primary">
                         Category:
                       </Typography>{" "}
@@ -133,14 +132,11 @@ export const EventItem = () => {
                         Speaker:
                       </Typography>{" "}
                       Pastor Abebe Kebede
-                    </Typography>
+                    </Box>
                   </CardContent>
                 </div>
               </Box>
             </Grid>
-            {/* <Grid className={classes.itemButton} item md={1}>
-              <Button className={classes.button}>More</Button>
-            </Grid> */}
           </Grid>
         </CardContent>
       </Card>
