@@ -7,6 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import { Box, Button, Grid } from "@material-ui/core";
 import Event from "../../assets/Events/Event.jpg";
 import { AccessTime, LocationOn } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -75,6 +76,12 @@ const useStyles = makeStyles((theme) => ({
     background: theme.palette.secondary.main,
     maxWidth: "fit-content",
   },
+  link: {
+    textDecoration: "none",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.dark
+    }
+  }
 }));
 
 function EventLeft() {
@@ -139,7 +146,9 @@ export const EventItem = () => {
               </Typography>
             </Grid>
             <Grid className={classes.itemButton} item md={1}>
-              <Button className={classes.button}>More</Button>
+              <Link className={classes.link} to="/eventsdetail">
+                <Button className={classes.button}>More</Button>
+              </Link>
             </Grid>
           </Grid>
         </CardContent>
